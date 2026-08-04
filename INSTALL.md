@@ -99,10 +99,6 @@ Prefer running locally? The plugin's server is one self-contained Node file — 
 
 ChatGPT can't run local servers or read SKILL.md, but it supports remote MCP connectors: **Settings → Connectors → Add → `https://mcp.agent.ai/mcp`** and sign in when prompted. That's agent.ai's official hosted server — same actions, OAuth instead of an API key. The GTM skills themselves have no ChatGPT equivalent; paste a skill's `SKILL.md` into a Custom GPT's instructions if you need one there.
 
-## Builder.org team members
-
-Use the **private** marketplace instead — it carries these two plugins plus the internal `builder-ops`: `/plugin marketplace add OnStartups/agent_ai`. Don't register both: the two marketplaces share the name `builder-org`, so a machine holds one or the other.
-
 ---
 
 Tested 2026-08-04: marketplace add + both plugin installs from this repo (Claude Code CLI), `npx skills add` single-skill and `--skill '*'` (22/22), update + uninstall round-trip.
