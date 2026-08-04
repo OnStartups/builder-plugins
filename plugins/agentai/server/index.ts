@@ -1,19 +1,14 @@
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 import { CORE_TOOLS } from "./core-tools";
 import { toZodShape } from "./schema";
 import type { ActionCatalog, PublicFunction } from "./types";
+import catalogJson from "../data/action-catalog.json";
+import publicFunctionsJson from "../data/public-functions.json";
 
-const dataDir = join(import.meta.dir, "..", "data");
-const catalog = JSON.parse(
-  readFileSync(join(dataDir, "action-catalog.json"), "utf8"),
-) as ActionCatalog;
-const publicFunctions = JSON.parse(
-  readFileSync(join(dataDir, "public-functions.json"), "utf8"),
-) as PublicFunction[];
+const catalog = catalogJson as unknown as ActionCatalog;
+const publicFunctions = publicFunctionsJson as unknown as PublicFunction[];
 
 const functionsByName = new Map(publicFunctions.map((fn) => [fn.name, fn]));
 const apiBase = process.env.AGENTAI_API_BASE ?? "https://api-lr.agent.ai";

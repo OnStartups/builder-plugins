@@ -9,6 +9,14 @@
   },
   "repository": "https://github.com/OnStartups/builder-plugins",
   "license": "MIT",
+  "mcpServers": {
+    "agentai": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/server/dist/index.js"
+      ]
+    }
+  },
   "keywords": [
     "agent.ai",
     "mcp",
