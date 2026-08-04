@@ -1,0 +1,21 @@
+{
+  "name": "builder-skills",
+  "displayName": "Builder.org GTM Skills",
+  "version": "1.0.0",
+  "description": "The 21 Builder.org GTM platform skills: account briefs, prospect research, outreach sequences, pipeline digests, meeting prep and follow-up, HubSpot automation patterns, and more.",
+  "author": {
+    "name": "Builder.org",
+    "url": "https://github.com/OnStartups/agent_ai"
+  },
+  "repository": "https://github.com/OnStartups/builder-plugins",
+  "license": "MIT",
+  "keywords": [
+    "gtm",
+    "sales",
+    "hubspot",
+    "outreach",
+    "research",
+    "skills"
+  ],
+  "homepage": "https://github.com/OnStartups/builder-plugins"
+}

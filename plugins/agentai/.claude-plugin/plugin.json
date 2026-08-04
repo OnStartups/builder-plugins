@@ -1,0 +1,21 @@
+{
+  "name": "agentai",
+  "displayName": "agent.ai Actions",
+  "version": "1.0.0",
+  "description": "agent.ai public Actions API as MCP tools: 51 typed endpoints (web/search/social/company data, LLM/image/audio generation, agent discovery and invocation) plus catalog-driven invoke_action, list_actions, and describe_action covering all 170+ public actions. Requires AGENTAI_API_KEY.",
+  "author": {
+    "name": "Builder.org",
+    "url": "https://github.com/OnStartups/agent_ai"
+  },
+  "repository": "https://github.com/OnStartups/builder-plugins",
+  "license": "MIT",
+  "keywords": [
+    "agent.ai",
+    "mcp",
+    "enrichment",
+    "scraping",
+    "linkedin",
+    "actions-api"
+  ],
+  "homepage": "https://github.com/OnStartups/builder-plugins"
+}

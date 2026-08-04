@@ -1,0 +1,31 @@
+{
+  "name": "builder-org",
+  "displayName": "Builder.org",
+  "description": "Builder.org plugins for Claude Code: GTM platform skills and the agent.ai Actions API as native tools.",
+  "owner": {
+    "name": "Builder.org",
+    "url": "https://github.com/OnStartups/builder-plugins"
+  },
+  "plugins": [
+    {
+      "name": "builder-skills",
+      "displayName": "Builder.org GTM Skills",
+      "category": "productivity",
+      "source": "./plugins/builder-skills",
+      "description": "The 21 Builder.org GTM platform skills: account briefs, prospect research, outreach sequences, pipeline digests, meeting prep and follow-up, HubSpot automation patterns, and more.",
+      "version": "1.0.0",
+      "strict": true,
+      "defaultEnabled": true
+    },
+    {
+      "name": "agentai",
+      "displayName": "agent.ai Actions",
+      "category": "integrations",
+      "source": "./plugins/agentai",
+      "description": "agent.ai public Actions API as MCP tools: 51 typed endpoints (web/search/social/company data, LLM/image/audio generation, agent discovery and invocation) plus catalog-driven invoke_action, list_actions, and describe_action covering all 170+ public actions. Requires AGENTAI_API_KEY.",
+      "version": "1.0.0",
+      "strict": true,
+      "defaultEnabled": true
+    }
+  ]
+}

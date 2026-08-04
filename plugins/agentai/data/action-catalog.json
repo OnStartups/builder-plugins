@@ -1,0 +1,1532 @@
+{
+  "add_to_list": {
+    "category": "Workflow & Logic",
+    "inputs": ["input_text", "output_variable_name"],
+    "label": "Add to List"
+  },
+  "aeo_seo_research/actions/generate_research_action": {
+    "category": "Content Marketing Team",
+    "inputs": [
+      "topic",
+      "research_depth",
+      "website_url",
+      "optimization_focus",
+      "output_variable_name"
+    ],
+    "label": "[CM1] AEO & SEO Research"
+  },
+  "aeo_seo_research/actions/render_research_report": {
+    "category": "Content Marketing Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[CM1_Report] SEO Research Report"
+  },
+  "check_condition": {
+    "category": "Workflow & Logic",
+    "inputs": ["query"],
+    "label": "Continue or Exit Workflow"
+  },
+  "click_go_to_continue": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["variable_value"],
+    "label": "Click Go to Continue"
+  },
+  "cold_call_prep/generate_call_game_plan": {
+    "category": "Sales Outreach",
+    "inputs": [
+      "company_website",
+      "contact_name",
+      "linkedin_url",
+      "contact_role",
+      "call_objective",
+      "known_context",
+      "seller_product",
+      "seller_icp",
+      "seller_website",
+      "pain_points",
+      "output_variable_name"
+    ],
+    "label": "[CCP] Cold Call Prep"
+  },
+  "company_financial_info": {
+    "category": "Business & Financial Data",
+    "inputs": ["company", "quarter", "year", "output_variable_name"],
+    "label": "Company Earnings Info"
+  },
+  "company_financial_profile": {
+    "category": "Business & Financial Data",
+    "inputs": ["company", "output_variable_name"],
+    "label": "Company Financial Profile"
+  },
+  "company_research_v2/actions/add_to_hubspot": {
+    "category": "Company Research",
+    "inputs": [
+      "domain",
+      "company_id",
+      "create_if_missing",
+      "update_existing",
+      "output_variable_name"
+    ],
+    "label": "[CR11] Add to HubSpot"
+  },
+  "company_research_v2/actions/answer_question": {
+    "category": "Company Research",
+    "inputs": ["company_id", "question", "use_live_data", "output_variable_name"],
+    "label": "[CR9] Answer Custom Question"
+  },
+  "company_research_v2/actions/ask_domain_question": {
+    "category": "Company Research",
+    "inputs": [
+      "domain",
+      "question",
+      "use_report_context",
+      "use_live_search",
+      "output_variable_name"
+    ],
+    "label": "[CRQ] Ask Domain Question"
+  },
+  "company_research_v2/actions/get_domain_qa_history": {
+    "category": "Company Research",
+    "inputs": ["domain", "limit", "output_variable_name"],
+    "label": "[CRQ] Get Domain Q&A History"
+  },
+  "company_research_v2/actions/get_report": {
+    "category": "Company Research",
+    "inputs": ["report_id", "include_html", "output_variable_name"],
+    "label": "[CR3] Get Full Report"
+  },
+  "company_research_v2/actions/get_section": {
+    "category": "Company Research",
+    "inputs": ["report_id", "section_key", "output_variable_name"],
+    "label": "[CR4] Get Report Section"
+  },
+  "company_research_v2/actions/get_status": {
+    "category": "Company Research",
+    "inputs": ["report_id", "output_variable_name"],
+    "label": "[CR2] Get Report Status"
+  },
+  "company_research_v2/actions/list_tracked": {
+    "category": "Company Research",
+    "inputs": ["favorites_only", "search", "tags", "output_variable_name"],
+    "label": "[CR8] List Tracked Companies"
+  },
+  "company_research_v2/actions/render_html": {
+    "category": "Company Research",
+    "inputs": ["report_data", "report_id", "output_variable_name"],
+    "label": "[CR10] Render Report HTML"
+  },
+  "company_research_v2/actions/run_full_research": {
+    "category": "Company Research",
+    "inputs": [
+      "domain",
+      "section_company_overview",
+      "section_visual_timeline",
+      "section_product_summary",
+      "section_homepage_screenshot",
+      "section_technology_stack",
+      "section_wappalyzer_technologies",
+      "section_search_keywords",
+      "section_financials",
+      "section_funding_history",
+      "section_web_traffic",
+      "section_news",
+      "section_people",
+      "section_competitors",
+      "section_job_openings",
+      "section_contact",
+      "section_g2_reviews",
+      "force_refresh",
+      "output_variable_name"
+    ],
+    "label": "[CRFull] Run Full Company Research"
+  },
+  "company_research_v2/actions/search_companies": {
+    "category": "Company Research",
+    "inputs": ["query", "page", "page_size", "output_variable_name"],
+    "label": "[CR5] Search Companies"
+  },
+  "company_research_v2/actions/start_research": {
+    "category": "Company Research",
+    "inputs": ["domain", "force_refresh", "output_variable_name"],
+    "label": "[CR1] Start Company Research"
+  },
+  "company_research_v2/actions/track_company": {
+    "category": "Company Research",
+    "inputs": ["domain", "company_id", "is_favorite", "tags", "output_variable_name"],
+    "label": "[CR6] Track Company"
+  },
+  "competitive_brief/actions/render_brief_html": {
+    "category": "Competitive Brief",
+    "inputs": ["brief_data", "output_variable_name"],
+    "label": "[CBRender] Render Brief as HTML"
+  },
+  "competitive_brief/actions/run_full_brief": {
+    "category": "Competitive Brief",
+    "inputs": [
+      "company_name",
+      "about",
+      "role",
+      "use_user_context_role",
+      "use_full_user_context",
+      "industry",
+      "industry_keywords",
+      "competitors",
+      "brand_keywords",
+      "contacts",
+      "force_refresh",
+      "email",
+      "send_email",
+      "output_variable_name"
+    ],
+    "label": "[CBFull] Run Full Competitive Brief"
+  },
+  "comprehensive_contact_intelligence": {
+    "category": "Integration Intelligence",
+    "inputs": [
+      "email_provider",
+      "email_list",
+      "name_company_list",
+      "analyze_relationships",
+      "enrich_linkedin",
+      "enrich_company",
+      "output_variable_name"
+    ],
+    "label": "Contact Enrichment & Relationship Synthesis"
+  },
+  "contact_research": {
+    "category": "Integration Intelligence",
+    "inputs": ["contacts", "mode", "with_company_context", "output_format", "output_variable_name"],
+    "label": "Contact Research"
+  },
+  "content_audit/actions/generate_audit_action": {
+    "category": "Content Marketing Team",
+    "inputs": ["website_url", "audit_scope", "optimization_focus", "output_variable_name"],
+    "label": "[CM4] Content Audit"
+  },
+  "content_audit/actions/render_audit_report": {
+    "category": "Content Marketing Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[CM4_Report] Content Audit Report"
+  },
+  "content_creator/actions/generate_article_action": {
+    "category": "Content Marketing Team",
+    "inputs": [
+      "topic",
+      "target_keyword",
+      "content_type",
+      "secondary_keywords",
+      "brief_notes",
+      "optimization_focus",
+      "brand_voice",
+      "output_variable_name"
+    ],
+    "label": "[CM3] Content Creator"
+  },
+  "content_creator/actions/render_article_report": {
+    "category": "Content Marketing Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[CM3_Report] Article Report"
+  },
+  "content_planner/actions/generate_content_plan_action": {
+    "category": "Content Marketing Team",
+    "inputs": [
+      "topics",
+      "planning_period",
+      "publishing_capacity",
+      "upcoming_events",
+      "optimization_focus",
+      "brand_voice",
+      "output_variable_name"
+    ],
+    "label": "[CM2] Content Planner"
+  },
+  "content_planner/actions/render_plan_report": {
+    "category": "Content Marketing Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[CM2_Report] Content Plan Report"
+  },
+  "convert_file": {
+    "category": "AI & Content Generation",
+    "inputs": [
+      "input_files",
+      "show_all_conversion_options",
+      "convert_to_extension",
+      "output_variable_name"
+    ],
+    "label": "Convert File"
+  },
+  "create_file": {
+    "category": "Outputs",
+    "inputs": ["file_type", "body", "output_variable_name"],
+    "label": "Save To File"
+  },
+  "create_google_drive_document": {
+    "category": "Outputs",
+    "inputs": ["title", "body"],
+    "label": "Save To Google Doc"
+  },
+  "create_google_drive_sheet": {
+    "category": "Outputs",
+    "inputs": ["title", "body"],
+    "label": "Save To Google Sheet"
+  },
+  "create_pdf": {
+    "category": "Outputs",
+    "inputs": ["html_string", "output_variable_name"],
+    "label": "Create PDF from Markdown or HTML"
+  },
+  "domain_info": {
+    "category": "Business & Financial Data",
+    "inputs": ["domain", "output_variable_name"],
+    "label": "Domain Info"
+  },
+  "end_condition": {
+    "category": "Workflow & Logic",
+    "inputs": [],
+    "label": "End If/Else/For Statement"
+  },
+  "end_parallel_condition": {
+    "category": "Workflow & Logic",
+    "inputs": [],
+    "label": "Parallel Block (End)"
+  },
+  "enrich_calendar_event": {
+    "category": "Integration Intelligence",
+    "inputs": [
+      "calendar_provider",
+      "event_id",
+      "calendar_id",
+      "include_attendees",
+      "include_description",
+      "include_transcript",
+      "include_ai_insights",
+      "scrape_context_documents",
+      "output_variable_name"
+    ],
+    "label": "Enrich Calendar Event"
+  },
+  "enrich_person": {
+    "category": "People Intelligence",
+    "inputs": ["email", "name", "company", "domain", "linkedin_url", "output_variable_name"],
+    "label": "Enrich Person"
+  },
+  "fetch_relevant_gmail_threads": {
+    "category": "Integration Intelligence",
+    "inputs": [
+      "email_provider",
+      "contact_email",
+      "meeting_topic",
+      "date_range_days",
+      "max_results",
+      "analysis_type",
+      "output_variable_name"
+    ],
+    "label": "Analyze Contact Email History & Insights"
+  },
+  "file_converter/convert_action": {
+    "category": "File Converter",
+    "inputs": ["input_file_url", "input_format", "output_format", "output_variable_name"],
+    "label": "[FC1] Convert File"
+  },
+  "file_converter/encrypt_action": {
+    "category": "File Converter",
+    "inputs": ["input_file_url", "password", "output_variable_name"],
+    "label": "[FC8] Encrypt PDF"
+  },
+  "file_converter/image_to_text_action": {
+    "category": "File Converter",
+    "inputs": ["input_file_url", "language", "output_variable_name"],
+    "label": "[FC6] Image to Text (OCR)"
+  },
+  "file_converter/merge_action": {
+    "category": "File Converter",
+    "inputs": ["input_file_urls", "output_variable_name"],
+    "label": "[FC3] Merge PDFs"
+  },
+  "file_converter/metadata_action": {
+    "category": "File Converter",
+    "inputs": ["input_file_url", "output_variable_name"],
+    "label": "[FC4] Extract File Metadata"
+  },
+  "file_converter/ocr_action": {
+    "category": "File Converter",
+    "inputs": ["input_file_url", "language", "output_variable_name"],
+    "label": "[FC5] PDF OCR"
+  },
+  "file_converter/optimize_action": {
+    "category": "File Converter",
+    "inputs": ["input_file_url", "input_format", "profile", "output_variable_name"],
+    "label": "[FC2] Optimize File"
+  },
+  "file_converter/render_conversion_report": {
+    "category": "File Converter",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[FC1_Report] File Conversion Report"
+  },
+  "file_converter/split_action": {
+    "category": "File Converter",
+    "inputs": ["input_file_url", "output_variable_name"],
+    "label": "[FC7] Split PDF"
+  },
+  "file_converter/watermark_action": {
+    "category": "File Converter",
+    "inputs": ["input_file_url", "input_format", "text", "output_variable_name"],
+    "label": "[FC9] Watermark File"
+  },
+  "find_linkedin_profile": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["query", "output_variable_name"],
+    "label": "Find LinkedIn Profile"
+  },
+  "for_condition": {
+    "category": "Workflow & Logic",
+    "inputs": ["loop_count", "output_variable_name", "variable_name"],
+    "label": "For Loop"
+  },
+  "format_text": {
+    "category": "Outputs",
+    "inputs": ["format_type", "delimiter", "input_text", "output_variable_name"],
+    "label": "Format Text"
+  },
+  "generate_image": {
+    "category": "AI & Content Generation",
+    "inputs": [
+      "model",
+      "model_style",
+      "model_aspect_ratio",
+      "model_prompt",
+      "output_variable_name"
+    ],
+    "label": "Generate Image"
+  },
+  "get_bluesky_posts": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["handle", "num_posts", "output_variable_name"],
+    "label": "Bluesky Posts"
+  },
+  "get_calendar_events_list": {
+    "category": "Integration Intelligence",
+    "inputs": [
+      "calendar_provider",
+      "event_filter",
+      "with_notetaker_transcript_only",
+      "max_events",
+      "primary_calendar_only",
+      "output_format",
+      "output_variable_name"
+    ],
+    "label": "Get Calendar Events List"
+  },
+  "get_company_object": {
+    "category": "Business & Financial Data",
+    "inputs": ["domain", "output_variable_name"],
+    "label": "Enrich Company Data with Breeze Intelligence"
+  },
+  "get_data_from_builder_knowledge_base": {
+    "category": "Business & Financial Data",
+    "inputs": [
+      "query",
+      "builder_knowledge_bases_list",
+      "max_documents_count",
+      "score_cutoff",
+      "output_variable_name"
+    ],
+    "label": "Get Data from Builder's Knowledge Base"
+  },
+  "get_data_from_user_uploaded_files": {
+    "category": "Business & Financial Data",
+    "inputs": [
+      "query",
+      "assistant_files",
+      "max_documents_count",
+      "score_cutoff",
+      "output_variable_name"
+    ],
+    "label": "Get Data from User's Uploaded Files"
+  },
+  "get_google_news": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["query", "date_range", "output_variable_name"],
+    "label": "Google News Data"
+  },
+  "get_instagram_followers": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["username", "limit", "output_variable_name"],
+    "label": "Get Instagram Followers"
+  },
+  "get_instagram_profile": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["username", "output_variable_name"],
+    "label": "Get Instagram Profile"
+  },
+  "get_linkedin_activity": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["profile_urls", "num_posts", "output_variable_name"],
+    "label": "Get LinkedIn Activity"
+  },
+  "get_linkedin_company_posts": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["company_url", "output_variable_name"],
+    "label": "Get LinkedIn Company Posts"
+  },
+  "get_linkedin_company_profile": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["company_url", "output_variable_name"],
+    "label": "Get LinkedIn Company Profile"
+  },
+  "get_linkedin_job_posting": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["job_url", "output_variable_name"],
+    "label": "Get LinkedIn Job Posting"
+  },
+  "get_linkedin_posts": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["post_urls", "output_variable_name"],
+    "label": "Get LinkedIn Posts"
+  },
+  "get_linkedin_profile": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["profile_handle", "output_variable_name"],
+    "label": "Get LinkedIn Profile Details"
+  },
+  "get_person_object": {
+    "category": "Business & Financial Data",
+    "inputs": ["email", "output_variable_name"],
+    "label": "Enrich User Data with Breeze Intelligence"
+  },
+  "get_recent_tweets": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["profile_handle", "recent_tweets_count", "output_variable_name"],
+    "label": "Recent Tweets"
+  },
+  "get_search_results": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["search_engine", "query", "num_posts", "output_variable_name"],
+    "label": "Search Results"
+  },
+  "get_twitter_users": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["keywords", "num_users", "output_variable_name"],
+    "label": "Get Twitter Users"
+  },
+  "get_user_files": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["input_description", "required", "input_name", "in_session_files_only"],
+    "label": "Get User File"
+  },
+  "get_user_input": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": [
+      "input_type",
+      "input_description",
+      "default_value",
+      "required",
+      "input_name",
+      "show_in_agent_settings",
+      "settings_only"
+    ],
+    "label": "Get User Input"
+  },
+  "get_user_list": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["input_description", "delimiter", "required", "input_name"],
+    "label": "Get User List"
+  },
+  "get_variable_from_database": {
+    "category": "Workflow & Logic",
+    "inputs": [
+      "variable",
+      "variable_retrieval_depth",
+      "agent_db_historical_values",
+      "agent_db_variable_retrieval_count",
+      "output_variable"
+    ],
+    "label": "Get Variable from Database"
+  },
+  "get_youtube_channel": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["url", "output_variable_name"],
+    "label": "YouTube Channel Data"
+  },
+  "get_youtube_transcript": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["url", "output_variable_name"],
+    "label": "YouTube Transcript"
+  },
+  "grab_web_screenshot": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["url", "ttl_for_screenshot", "output_variable_name"],
+    "label": "Web Page Screenshot"
+  },
+  "grab_web_text": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["url", "mode", "output_variable_name"],
+    "label": "Web Page Content"
+  },
+  "heygen_avatar/generate_video": {
+    "category": "HeyGen Avatar",
+    "inputs": [
+      "source_type",
+      "blog_url",
+      "topic",
+      "content_type",
+      "aspect_ratio",
+      "avatar_name",
+      "expression",
+      "circle_style",
+      "background_color",
+      "output_variable_name"
+    ],
+    "label": "[HG1] Generate Avatar Video"
+  },
+  "heygen_avatar/get_video_status": {
+    "category": "HeyGen Avatar",
+    "inputs": ["video_id", "output_variable_name"],
+    "label": "[HG2] Get Video Status"
+  },
+  "heygen_photo_avatar/actions/create_avatar_action": {
+    "category": "HeyGen Photo Avatar",
+    "inputs": [
+      "source_type",
+      "name",
+      "photos_json",
+      "age",
+      "gender",
+      "ethnicity",
+      "orientation",
+      "pose",
+      "style",
+      "appearance",
+      "output_variable_name"
+    ],
+    "label": "[PA1] Create Photo Avatar"
+  },
+  "heygen_photo_avatar/actions/render_avatar_report": {
+    "category": "HeyGen Photo Avatar",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[PA1_Report] Photo Avatar Report"
+  },
+  "hubspot.v2.create_engagement": {
+    "category": "HubSpot CRM & Automation",
+    "inputs": [
+      "object_type",
+      "content_body",
+      "title_subject",
+      "duration",
+      "status",
+      "priority",
+      "properties",
+      "associations",
+      "output_variable_name"
+    ],
+    "label": "Create HubSpot Engagement"
+  },
+  "hubspot.v2.create_object": {
+    "category": "HubSpot CRM & Automation",
+    "inputs": ["object_type", "properties", "associations", "output_variable_name"],
+    "label": "Create HubSpot Object"
+  },
+  "hubspot.v2.create_timeline_event": {
+    "category": "HubSpot CRM & Automation",
+    "inputs": [
+      "object_type",
+      "target_object_id",
+      "event_type",
+      "event_title",
+      "event_description",
+      "event_properties",
+      "event_timestamp",
+      "output_variable_name"
+    ],
+    "label": "Create HubSpot Timeline Event"
+  },
+  "hubspot.v2.get_engagements": {
+    "category": "HubSpot CRM & Automation",
+    "inputs": [
+      "object_type",
+      "source_object_id",
+      "engagement_types",
+      "properties",
+      "start_date",
+      "end_date",
+      "output_variable_name",
+      "result_limit"
+    ],
+    "label": "Get HubSpot Engagements"
+  },
+  "hubspot.v2.get_timeline_events": {
+    "category": "HubSpot CRM & Automation",
+    "inputs": [
+      "object_type",
+      "source_object_id",
+      "event_type_filter",
+      "properties",
+      "start_date",
+      "end_date",
+      "result_limit",
+      "output_variable_name"
+    ],
+    "label": "Get HubSpot Timeline Events"
+  },
+  "hubspot.v2.lookup_object": {
+    "category": "HubSpot CRM & Automation",
+    "inputs": ["object_type", "object_id", "properties", "output_variable_name"],
+    "label": "Look up HubSpot Object"
+  },
+  "hubspot.v2.search_objects": {
+    "category": "HubSpot CRM & Automation",
+    "inputs": [
+      "object_type",
+      "filters",
+      "properties",
+      "associations",
+      "output_variable_name",
+      "output_sort",
+      "output_sort_dir",
+      "output_limit"
+    ],
+    "label": "Search HubSpot Objects"
+  },
+  "hubspot.v2.update_object": {
+    "category": "HubSpot CRM & Automation",
+    "inputs": [
+      "object_type",
+      "identification_method",
+      "identifier_value",
+      "properties",
+      "associations",
+      "output_variable_name"
+    ],
+    "label": "Update HubSpot Object"
+  },
+  "if_condition": {
+    "category": "Workflow & Logic",
+    "inputs": ["else", "query"],
+    "label": "If/Else Statement"
+  },
+  "industry_research/actions/generate_research_action": {
+    "category": "Industry Research",
+    "inputs": [
+      "industry",
+      "geography",
+      "seller_product",
+      "seller_icp",
+      "seller_website",
+      "seller_competitors",
+      "output_variable_name"
+    ],
+    "label": "[IR1] Generate Industry Research"
+  },
+  "industry_research/actions/send_research_email_action": {
+    "category": "Industry Research",
+    "inputs": ["report_id", "email", "output_variable_name"],
+    "label": "[IR2] Send Industry Research Email"
+  },
+  "instant_headshot/render_headshot_report": {
+    "category": "Headshot Generator",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[HS1_Report] Headshot Report"
+  },
+  "instant_headshot/run_headshot_generation": {
+    "category": "Headshot Generator",
+    "inputs": [
+      "photos_json",
+      "style",
+      "background",
+      "attire",
+      "count",
+      "quality",
+      "aspect_ratio",
+      "custom_prompt",
+      "output_variable_name"
+    ],
+    "label": "[HS1] Generate Headshots"
+  },
+  "invoke_agent": {
+    "category": "Workflow & Logic",
+    "inputs": ["module", "params", "output_variable_name"],
+    "label": "Invoke Other Agent"
+  },
+  "invoke_llm": {
+    "category": "AI & Content Generation",
+    "inputs": [
+      "llm_engine",
+      "anthropic_skills",
+      "instructions",
+      "knowledge_bases",
+      "output_json_schema",
+      "output_variable_name"
+    ],
+    "label": "Generate Content"
+  },
+  "lead_qualifier/qualify_lead": {
+    "category": "Lead Qualifier",
+    "inputs": [
+      "company_website",
+      "contact_name",
+      "fit_context",
+      "seller_product",
+      "seller_icp",
+      "seller_website",
+      "output_variable_name"
+    ],
+    "label": "[LQ1] Qualify Lead"
+  },
+  "lead_qualifier/render_qualification_html": {
+    "category": "Lead Qualifier",
+    "inputs": ["qualification", "output_variable_name"],
+    "label": "[LQ2] Render Qualification HTML"
+  },
+  "linkedin_sentiment/render_report_html": {
+    "category": "Integration Intelligence",
+    "inputs": ["posts_json", "sentiments", "report_title", "output_variable_name"],
+    "label": "Render LinkedIn Sentiment Report"
+  },
+  "list_agent_memories": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": [
+      "agent_id_override",
+      "keyword_filter",
+      "metadata_filter",
+      "limit",
+      "include_full_content",
+      "output_variable_name"
+    ],
+    "label": "List Agent Memories"
+  },
+  "meeting_followup/analyze_transcript": {
+    "category": "Meeting Follow-Up",
+    "inputs": [
+      "enriched_event",
+      "user_role",
+      "user_goals",
+      "followup_context",
+      "model",
+      "output_variable_name"
+    ],
+    "label": "[F4] Analyze Transcript"
+  },
+  "meeting_followup/enrich_meeting_event": {
+    "category": "Meeting Follow-Up",
+    "inputs": [
+      "event_id",
+      "calendar_provider",
+      "include_attendees",
+      "include_transcript",
+      "include_ai_insights",
+      "output_variable_name"
+    ],
+    "label": "[F3] Enrich Meeting Event"
+  },
+  "meeting_followup/generate_all_artifacts": {
+    "category": "Meeting Follow-Up",
+    "inputs": [
+      "transcript_analysis",
+      "user_context",
+      "user_context_data",
+      "enriched_event",
+      "fast_model",
+      "quality_model",
+      "team_channel",
+      "meeting_memories_answer",
+      "output_variable_name"
+    ],
+    "label": "[F5+F6] Generate All Artifacts (Fast)"
+  },
+  "meeting_followup/generate_coaching": {
+    "category": "Meeting Follow-Up",
+    "inputs": [
+      "transcript_analysis",
+      "user_context",
+      "user_context_data",
+      "model",
+      "output_variable_name"
+    ],
+    "label": "[F5] Generate Coaching"
+  },
+  "meeting_followup/generate_followup_artifacts": {
+    "category": "Meeting Follow-Up",
+    "inputs": [
+      "transcript_analysis",
+      "coaching_insights",
+      "user_context",
+      "user_context_data",
+      "enriched_event",
+      "fast_model",
+      "quality_model",
+      "team_channel",
+      "output_variable_name"
+    ],
+    "label": "[F6] Generate Followup Artifacts"
+  },
+  "meeting_followup/load_followup_context": {
+    "category": "Meeting Follow-Up",
+    "inputs": ["primary_role", "goals", "user_context_data", "user_email", "output_variable_name"],
+    "label": "[F2] Load Followup Context"
+  },
+  "meeting_followup/render_followup_html": {
+    "category": "Meeting Follow-Up",
+    "inputs": [
+      "followup_artifacts",
+      "coaching_insights",
+      "transcript_analysis",
+      "user_context",
+      "user_context_data",
+      "enriched_event",
+      "output_variable_name"
+    ],
+    "label": "[F7] Render Followup HTML"
+  },
+  "meeting_followup/select_past_meeting": {
+    "category": "Meeting Follow-Up",
+    "inputs": ["selected_meeting_id", "past_calendar_events", "output_variable_name"],
+    "label": "[F1] Select Past Meeting"
+  },
+  "meeting_prep/analyze_meeting_relationships": {
+    "category": "Meeting Prep",
+    "inputs": [
+      "processed_event",
+      "meeting_classification",
+      "meeting_history",
+      "output_variable_name"
+    ],
+    "label": "[P4] Analyze Meeting Relationships"
+  },
+  "meeting_prep/assemble_meeting_document": {
+    "category": "Meeting Prep",
+    "inputs": [
+      "section_overview",
+      "section_attendees",
+      "section_company",
+      "section_strategy",
+      "section_goals",
+      "processed_gcal_event",
+      "user_first_name",
+      "output_variable_name"
+    ],
+    "label": "[P7] Assemble Meeting Document"
+  },
+  "meeting_prep/classify_meeting": {
+    "category": "Meeting Prep",
+    "inputs": ["processed_event", "output_variable_name"],
+    "label": "[P3] Classify Meeting"
+  },
+  "meeting_prep/extract_selected_meeting": {
+    "category": "Meeting Prep",
+    "inputs": ["selected_meeting_id", "gcal_events_list", "output_variable_name"],
+    "label": "[P1] Extract Selected Meeting"
+  },
+  "meeting_prep/generate_meeting_sections": {
+    "category": "Meeting Prep",
+    "inputs": [
+      "processed_research",
+      "target_company_identity",
+      "meeting_classification",
+      "topic_signals",
+      "meeting_relationships",
+      "processed_gcal_event",
+      "user_context",
+      "sections_to_generate",
+      "fast_model",
+      "quality_model",
+      "output_variable_name"
+    ],
+    "label": "[P6] Generate Meeting Sections"
+  },
+  "meeting_prep/generate_subject_line": {
+    "category": "Meeting Prep",
+    "inputs": ["meeting_title", "selected_meeting", "output_variable_name"],
+    "label": "[P2] Generate Subject Line"
+  },
+  "meeting_prep/load_user_context": {
+    "category": "Meeting Prep",
+    "inputs": ["user_data", "user_email", "meeting_type", "output_variable_name"],
+    "label": "[P2] Load User Context"
+  },
+  "meeting_prep/prepare_meeting_contacts": {
+    "category": "Meeting Prep",
+    "inputs": [
+      "classified_attendees",
+      "user_email",
+      "use_llm_for_company_name",
+      "output_variable_name"
+    ],
+    "label": "[P5] Prepare Meeting Contacts"
+  },
+  "meeting_prep/process_calendar_event": {
+    "category": "Meeting Prep",
+    "inputs": ["raw_event", "user_email", "company_domains", "output_variable_name"],
+    "label": "[P3] Process Calendar Event"
+  },
+  "meeting_prep/process_contact_research": {
+    "category": "Meeting Prep",
+    "inputs": [
+      "contact_research_results",
+      "classified_attendees",
+      "target_company_identity",
+      "processed_gcal_event",
+      "user_email",
+      "output_variable_name"
+    ],
+    "label": "[P5] Process Contact Research"
+  },
+  "meeting_prep/query_meeting_memories": {
+    "category": "Meeting Prep V3",
+    "inputs": [
+      "event_id",
+      "kb_scope",
+      "sort_order",
+      "context_limit",
+      "mode",
+      "prompt",
+      "output_variable_name"
+    ],
+    "label": "Query Meeting Memories"
+  },
+  "meeting_prep/render_meeting_prep_html": {
+    "category": "Meeting Prep",
+    "inputs": ["meeting_sections", "output_variable_name"],
+    "label": "[P7] Render Meeting Prep HTML"
+  },
+  "meeting_prep/run_optimized_pipeline": {
+    "category": "Meeting Prep",
+    "inputs": [
+      "raw_event",
+      "user_email",
+      "user_data",
+      "company_domains",
+      "meeting_history",
+      "contact_research",
+      "meeting_sections",
+      "include_html",
+      "settings",
+      "output_variable_name"
+    ],
+    "label": "[Full] Run Meeting Pipeline"
+  },
+  "meeting_prep/summarize_internal_team": {
+    "category": "Meeting Prep",
+    "inputs": [
+      "processed_gcal_event",
+      "classified_attendees",
+      "contact_research_results",
+      "user_email",
+      "user_name",
+      "use_llm",
+      "output_variable_name"
+    ],
+    "label": "[P5] Summarize Internal Team"
+  },
+  "meeting_prep/v3/assemble_meeting_document": {
+    "category": "Meeting Prep V3",
+    "inputs": [
+      "section_overview",
+      "section_attendees",
+      "section_company",
+      "section_situation",
+      "section_segues",
+      "section_questions",
+      "section_next_step",
+      "section_strategy",
+      "section_goals",
+      "processed_gcal_event",
+      "user_first_name",
+      "output_variable_name"
+    ],
+    "label": "[P7] V3 Assemble Meeting Document"
+  },
+  "meeting_prep/v3/generate_meeting_sections": {
+    "category": "Meeting Prep V3",
+    "inputs": [
+      "processed_research",
+      "target_company_identity",
+      "meeting_classification",
+      "topic_signals",
+      "meeting_relationships",
+      "processed_gcal_event",
+      "user_context",
+      "seller_profile",
+      "sections_to_generate",
+      "use_v4_sections",
+      "fast_model",
+      "quality_model",
+      "meeting_memories_answer",
+      "output_variable_name"
+    ],
+    "label": "[P6] V3 Generate Meeting Sections"
+  },
+  "meeting_prep/v3/load_user_context": {
+    "category": "Meeting Prep V3",
+    "inputs": [
+      "user_data",
+      "user_email",
+      "meeting_type",
+      "custom_goals",
+      "voice_profile",
+      "output_variable_name"
+    ],
+    "label": "[P2] V3 Load User Context"
+  },
+  "meeting_prep/v3/render_meeting_prep_html": {
+    "category": "Meeting Prep V3",
+    "inputs": ["meeting_sections", "output_variable_name"],
+    "label": "[P7] V3 Render Meeting Prep HTML"
+  },
+  "meeting_prep/v3/run_optimized_pipeline": {
+    "category": "Meeting Prep V3",
+    "inputs": [
+      "raw_event",
+      "user_email",
+      "user_data",
+      "company_domains",
+      "meeting_history",
+      "contact_research",
+      "meeting_sections",
+      "include_html",
+      "use_v4_sections",
+      "settings",
+      "output_variable_name"
+    ],
+    "label": "[Full] V3 Run Meeting Pipeline"
+  },
+  "meeting_prep/validate_meeting_trigger": {
+    "category": "Meeting Prep",
+    "inputs": ["trigger_data", "user_email", "company_domains", "settings", "output_variable_name"],
+    "label": "[P2] Validate Meeting Trigger"
+  },
+  "openclaw/chat_completion": {
+    "category": "OpenClaw",
+    "inputs": [
+      "instance_ip",
+      "auth_token",
+      "message",
+      "messages_json",
+      "model",
+      "agent_id",
+      "session_key",
+      "stream",
+      "timeout",
+      "output_variable_name"
+    ],
+    "label": "OpenClaw Chat Completion"
+  },
+  "openclaw/get_details": {
+    "category": "OpenClaw",
+    "inputs": ["output_variable_name"],
+    "label": "OpenClaw Get Details"
+  },
+  "openclaw/tools_invoke": {
+    "category": "OpenClaw",
+    "inputs": [
+      "instance_ip",
+      "auth_token",
+      "tool",
+      "action",
+      "args_json",
+      "session_key",
+      "dry_run",
+      "message_channel",
+      "account_id",
+      "timeout",
+      "output_variable_name"
+    ],
+    "label": "OpenClaw Tools Invoke"
+  },
+  "output_audio": {
+    "category": "AI & Content Generation",
+    "inputs": ["text_to_speech", "output_variable_name"],
+    "label": "Generate Audio Output"
+  },
+  "output_formatter": {
+    "category": "Outputs",
+    "inputs": ["heading", "output_formatted", "format"],
+    "label": "Show User Output"
+  },
+  "outreach_drafter/draft_outreach": {
+    "category": "Outreach Drafter",
+    "inputs": [
+      "prospect_name",
+      "company_website",
+      "channel",
+      "tone",
+      "goal",
+      "additional_context",
+      "seller_product",
+      "seller_icp",
+      "seller_website",
+      "pain_points",
+      "proof_points",
+      "output_variable_name"
+    ],
+    "label": "[OD1] Draft Outreach"
+  },
+  "outreach_drafter/render_outreach_html": {
+    "category": "Outreach Drafter",
+    "inputs": ["outreach_package", "output_variable_name"],
+    "label": "[OD2] Render Outreach HTML"
+  },
+  "outreach_sequence/generate_outreach_sequence": {
+    "category": "Sales Outreach",
+    "inputs": [
+      "company_website",
+      "contact_name",
+      "linkedin_url",
+      "contact_role",
+      "outreach_goal",
+      "channels",
+      "sequence_length",
+      "known_context",
+      "seller_product",
+      "seller_icp",
+      "seller_website",
+      "pain_points",
+      "output_variable_name"
+    ],
+    "label": "[OSQ] Outreach Sequence"
+  },
+  "outreach_strategist/generate_outreach_strategy": {
+    "category": "Sales Outreach",
+    "inputs": [
+      "company_website",
+      "contact_name",
+      "linkedin_url",
+      "contact_role",
+      "outreach_goal",
+      "known_context",
+      "seller_product",
+      "seller_icp",
+      "seller_website",
+      "pain_points",
+      "output_variable_name"
+    ],
+    "label": "[OS] Outreach Strategist"
+  },
+  "parallel_condition": {
+    "category": "Workflow & Logic",
+    "inputs": ["output_variable_name"],
+    "label": "Parallel Block (Start)"
+  },
+  "parallel_for_condition": {
+    "category": "Workflow & Logic",
+    "inputs": ["loop_count", "output_variable_name", "variable_name"],
+    "label": "Parallel For Loop"
+  },
+  "post_to_bluesky": {
+    "category": "Outputs",
+    "inputs": ["username", "password", "content", "output_variable_name"],
+    "label": "Post to Bluesky"
+  },
+  "process_video": {
+    "category": "AI & Content Generation",
+    "inputs": ["video_type", "video_url", "model_prompt", "output_variable_name"],
+    "label": "Process Video"
+  },
+  "prospect_finder/find_and_rank_prospects": {
+    "category": "Prospect Finder",
+    "inputs": [
+      "search_query",
+      "num_results",
+      "seller_product",
+      "seller_icp",
+      "seller_website",
+      "exclusion_slugs",
+      "output_variable_name"
+    ],
+    "label": "[PF1] Find & Rank Prospects"
+  },
+  "prospect_finder/render_prospect_finder_html": {
+    "category": "Prospect Finder",
+    "inputs": ["prospect_finder_result", "output_variable_name"],
+    "label": "[PF2] Render Prospect Finder HTML"
+  },
+  "prospect_research/find_prospects": {
+    "category": "Prospect Research",
+    "inputs": [
+      "company_name",
+      "company_domain",
+      "company_linkedin_slug",
+      "job_title",
+      "person_name",
+      "num_profiles",
+      "output_variable_name"
+    ],
+    "label": "[PR0] Find Prospects at Company"
+  },
+  "prospect_research/lookup_prospect_by_email": {
+    "category": "Prospect Research",
+    "inputs": ["email", "output_variable_name"],
+    "label": "[PR-E] Lookup Prospect by Email"
+  },
+  "prospect_research/render_prospect_html": {
+    "category": "Prospect Research",
+    "inputs": ["prospect_research", "output_variable_name"],
+    "label": "[PR2] Render Prospect Brief HTML"
+  },
+  "prospect_research/research_prospect": {
+    "category": "Prospect Research",
+    "inputs": [
+      "prospect_name",
+      "company_website",
+      "linkedin_url",
+      "additional_context",
+      "seller_website",
+      "seller_product",
+      "seller_icp",
+      "company_research",
+      "output_variable_name"
+    ],
+    "label": "[PR1] Research Prospect"
+  },
+  "prospect_research/search_company_intel": {
+    "category": "Prospect Research",
+    "inputs": ["query", "output_variable_name"],
+    "label": "[PR-C] Search Company Intel"
+  },
+  "query_agent_kb": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": [
+      "query",
+      "agent_id_override",
+      "include_citations",
+      "metadata_filter",
+      "output_variable_name"
+    ],
+    "label": "Look Up Agent Memories"
+  },
+  "rest_call": {
+    "category": "Workflow & Logic",
+    "inputs": ["url", "method", "format", "headers", "body", "output_variable_name"],
+    "label": "Invoke Web API"
+  },
+  "run_youtube_search": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["query", "output_variable_name"],
+    "label": "YouTube Search Results"
+  },
+  "save_to_agent_kb": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["text_content", "metadata", "suggested_keywords", "output_variable_name"],
+    "label": "Save Agent Memory"
+  },
+  "search_bluesky_posts": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["query", "num_posts", "output_variable_name"],
+    "label": "Search Bluesky Posts"
+  },
+  "search_linkedin_jobs": {
+    "category": "Social Media & Online Presence",
+    "inputs": [
+      "keyword",
+      "location",
+      "country",
+      "job_type",
+      "experience_level",
+      "remote",
+      "time_range",
+      "output_variable_name"
+    ],
+    "label": "Search LinkedIn Jobs"
+  },
+  "search_linkedin_people": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["first_name", "last_name", "output_variable_name"],
+    "label": "Search LinkedIn People"
+  },
+  "search_linkedin_posts_by_keyword": {
+    "category": "Social Media & Online Presence",
+    "inputs": ["keywords", "recency", "min_likes", "output_variable_name"],
+    "label": "Search LinkedIn Posts by Keyword"
+  },
+  "send_message": {
+    "category": "Outputs",
+    "inputs": ["type", "to", "email_addresses", "subject", "output_formatted"],
+    "label": "Send Message"
+  },
+  "serverless_function": {
+    "category": "Workflow & Logic",
+    "inputs": ["language", "serverless_code", "output_variable_name"],
+    "label": "Call Serverless Function"
+  },
+  "set_variable": {
+    "category": "Workflow & Logic",
+    "inputs": ["variable_name", "variable_value"],
+    "label": "Set Variable"
+  },
+  "shared/render_tabbed_report": {
+    "category": "Outputs",
+    "inputs": ["title", "subtitle", "report_data", "output_variable_name"],
+    "label": "Create Tabbed Report"
+  },
+  "social_performance_analyzer/actions/analyze_performance_action": {
+    "category": "Social Content Team",
+    "inputs": [
+      "linkedin_url",
+      "analysis_focus",
+      "competitor_url",
+      "time_period",
+      "brand_voice",
+      "industry",
+      "output_variable_name"
+    ],
+    "label": "[SC3] Analyze Social Performance"
+  },
+  "social_performance_analyzer/actions/render_analysis_report": {
+    "category": "Social Content Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[SC3_Report] Social Performance Report"
+  },
+  "social_planner/actions/generate_plan_action": {
+    "category": "Social Content Team",
+    "inputs": [
+      "content_pillars",
+      "planning_period",
+      "specific_topics",
+      "num_posts",
+      "brand_voice",
+      "performance_context",
+      "output_variable_name"
+    ],
+    "label": "[SC1] Generate Social Content Plan"
+  },
+  "social_planner/actions/render_plan_report": {
+    "category": "Social Content Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[SC1_Report] Social Plan Report"
+  },
+  "social_post_creator/actions/generate_post_action": {
+    "category": "Social Content Team",
+    "inputs": [
+      "topic",
+      "post_format",
+      "image_style",
+      "image_aspect_ratio",
+      "key_points",
+      "cta_intent",
+      "link_url",
+      "content_pillar",
+      "brand_voice",
+      "brand_primary_color",
+      "brand_secondary_color",
+      "brand_logo_url",
+      "output_variable_name"
+    ],
+    "label": "[SC2] Create Social Post"
+  },
+  "social_post_creator/actions/generate_social_image_action": {
+    "category": "Social Content Team",
+    "inputs": [
+      "prompt",
+      "topic",
+      "image_style",
+      "image_aspect_ratio",
+      "key_stat",
+      "key_quote",
+      "framework_desc",
+      "output_variable_name"
+    ],
+    "label": "[SC4] Generate Social Image"
+  },
+  "social_post_creator/actions/render_post_report": {
+    "category": "Social Content Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[SC2_Report] Social Post Report"
+  },
+  "store_variable_to_database": {
+    "category": "Workflow & Logic",
+    "inputs": ["variable", "output_variable"],
+    "label": "Store Variable to Database"
+  },
+  "trends_research/actions/generate_trends_action": {
+    "category": "Trends Research",
+    "inputs": [
+      "industry",
+      "geography",
+      "seller_product",
+      "seller_icp",
+      "seller_website",
+      "seller_competitors",
+      "output_variable_name"
+    ],
+    "label": "[TR1] Generate Trends Digest"
+  },
+  "trends_research/actions/send_trends_email_action": {
+    "category": "Trends Research",
+    "inputs": ["digest_id", "email", "output_variable_name"],
+    "label": "[TR2] Send Trends Digest Email"
+  },
+  "wait_for_confirmation": {
+    "category": "Inputs & Data Retrieval",
+    "inputs": ["user_message"],
+    "label": "Wait for User Confirmation"
+  },
+  "while_condition": {
+    "category": "Workflow & Logic",
+    "inputs": ["variable", "operator", "value", "output_variable_name"],
+    "label": "While Loop"
+  },
+  "youtube_idea_research/actions/generate_youtube_ideas_action": {
+    "category": "YouTube Creator Team",
+    "inputs": ["topic", "content_style", "content_goal", "output_variable_name"],
+    "label": "[YT1] Generate YouTube Video Ideas"
+  },
+  "youtube_idea_research/actions/render_ideas_report": {
+    "category": "YouTube Creator Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[YT1_Report] YouTube Ideas Report"
+  },
+  "youtube_script_writer/actions/generate_youtube_script_action": {
+    "category": "YouTube Creator Team",
+    "inputs": [
+      "topic",
+      "video_format",
+      "target_length",
+      "script_detail_level",
+      "angle_hook",
+      "target_audience",
+      "key_points",
+      "tone_of_voice",
+      "output_variable_name"
+    ],
+    "label": "[YT2] Generate YouTube Script"
+  },
+  "youtube_script_writer/actions/render_script_report": {
+    "category": "YouTube Creator Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[YT2_Report] YouTube Script Report"
+  },
+  "youtube_social_content/actions/generate_social_content_action": {
+    "category": "YouTube Creator Team",
+    "inputs": [
+      "topic",
+      "video_url",
+      "key_takeaways",
+      "target_audience",
+      "social_media_tone",
+      "output_variable_name"
+    ],
+    "label": "[YT3] Generate Social Content"
+  },
+  "youtube_social_content/actions/render_social_report": {
+    "category": "YouTube Creator Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[YT3_Report] Social Content Report"
+  },
+  "youtube_thumbnail/actions/generate_packaging_action": {
+    "category": "YouTube Creator Team",
+    "inputs": [
+      "input_mode",
+      "topic",
+      "video_url",
+      "key_takeaways",
+      "target_audience",
+      "thumbnail_direction",
+      "thumbnail_style",
+      "output_variable_name"
+    ],
+    "label": "[YT4] Generate YouTube Packaging"
+  },
+  "youtube_thumbnail/actions/render_packaging_report": {
+    "category": "YouTube Creator Team",
+    "inputs": ["report_data", "output_variable_name"],
+    "label": "[YT4_Report] YouTube Packaging Report"
+  }
+}
