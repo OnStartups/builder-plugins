@@ -4,11 +4,21 @@ GTM platform skills and the agent.ai Actions API, installable into [Claude Code]
 
 ## Install
 
+**Claude Code plugins** (skills + the agent.ai MCP server):
+
 ```
 /plugin marketplace add OnStartups/builder-plugins
 /plugin install builder-skills@builder-org
 /plugin install agentai@builder-org
 ```
+
+**Any agent via [skills.sh](https://skills.sh)** (Claude Code, Cursor, Codex, and more — skills only):
+
+```bash
+npx skills add OnStartups/builder-plugins --skill '*'
+```
+
+Or pick one: `npx skills add OnStartups/builder-plugins --skill account-brief` (browse with `--list`).
 
 ## What's inside
 
