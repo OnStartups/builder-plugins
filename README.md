@@ -4,6 +4,8 @@ GTM platform skills and the agent.ai Actions API, installable into [Claude Code]
 
 ## Install
 
+Full walkthrough with verification and troubleshooting: **[INSTALL.md](./INSTALL.md)**. The short version:
+
 **Claude Code plugins** (skills + the agent.ai MCP server):
 
 ```
