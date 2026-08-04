@@ -75,6 +75,30 @@ Skills land in your agent's skills directory (e.g. `./.claude/skills/<name>/` fo
 | A skill looks stale | `/plugin marketplace update builder-org` (marketplace) or re-run `npx skills add` (skills.sh) — installs are copies, not links. |
 | You had a pre-release `builder-org-*` plugin installed | Those names are retired. `claude plugin uninstall <name>@builder-org`, then install `builder-skills` / `agentai` per Path 1. |
 
+## Other platforms
+
+### Cursor / Codex / any SKILL.md agent
+
+Skills install via Path 2 above — target the agent explicitly:
+
+```bash
+npx skills add OnStartups/builder-plugins --skill '*' -a cursor
+```
+
+(Verified: skills land in `.agents/skills/`, the cross-agent location Cursor reads.)
+
+For the agent.ai tools in Cursor, add the **official agent.ai remote MCP server** to `.cursor/mcp.json` — it OAuths on connect:
+
+```json
+{ "mcpServers": { "agentai": { "url": "https://mcp.agent.ai/mcp" } } }
+```
+
+Prefer running locally? The plugin's server is one self-contained Node file — download [`plugins/agentai/server/dist/index.js`](./plugins/agentai/server/dist/index.js) and use `"command": "node", "args": ["/path/to/index.js"], "env": {"AGENTAI_API_KEY": "…"}` instead.
+
+### ChatGPT
+
+ChatGPT can't run local servers or read SKILL.md, but it supports remote MCP connectors: **Settings → Connectors → Add → `https://mcp.agent.ai/mcp`** and sign in when prompted. That's agent.ai's official hosted server — same actions, OAuth instead of an API key. The GTM skills themselves have no ChatGPT equivalent; paste a skill's `SKILL.md` into a Custom GPT's instructions if you need one there.
+
 ## Builder.org team members
 
 Use the **private** marketplace instead — it carries these two plugins plus the internal `builder-ops`: `/plugin marketplace add OnStartups/agent_ai`. Don't register both: the two marketplaces share the name `builder-org`, so a machine holds one or the other.
